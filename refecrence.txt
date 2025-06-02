@@ -1,0 +1,114 @@
+About me button Earlier : -
+
+<button
+  class="relative bg-gradient-to-r from-[#2B0031] via-[#6A0DAD] to-[#D8B4F8] text-white px-4 py-2 rounded-lg font-extrabold hover:from-[#D8B4F8] hover:via-[#6A0DAD] hover:to-[#2B0031] transition-all duration-300 hover:scale-110 ease-in-out group">
+  <span>About Me</span>
+  <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" width="44"
+    height="44" viewBox="0 0 100 100"
+    class="absolute pointer-events-none top-1/2 -translate-y-1/2 -right-7 group-hover:-right-8 duration-300">
+    <g transform="translate(0,-952.36218)">
+      <path style="
+            text-indent: 0;
+            text-transform: none;
+            direction: ltr;
+            baseline-shift: baseline;
+            color: #000000;
+            enable-background: accumulate;
+          "
+        d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+        fill="#fff" fill-opacity="1" stroke="white" stroke-width="2" marker="none" visibility="visible"
+        display="inline" overflow="visible" />
+    </g>
+  </svg>
+</button>
+
+====================================================================================================================
+
+
+
+    <!-- <video
+    class="absolute top-0 left-0 w-full h-full object-cover -z-10"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source src="https://videos.pexels.com/video-files/15107275/15107275-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  Optional Overlay
+  <div class="absolute inset-0 bg-black/40 z-0 pointer-events-none"></div> -->
+
+  ======================================================================================================================
+
+  animation for icons 
+
+      <!-- <script>
+      const screenWidth = window.innerWidth;
+      if (screenWidth > 768) {
+        const shapeContainer = document.querySelector('.shape');
+        const icons = ["fa-comment", "fa-star", "fa-envelope", "fa-paper-plane", "fa-user", "fa-microphone"];
+        const floatingIcons = [];
+        const baseIconCount = 15;
+        const fixedCount = 15;
+        const totalIcons = screenWidth > 1024 ? baseIconCount : Math.floor(baseIconCount * 0.6);
+
+        for (let i = 0; i < totalIcons; i++) {
+          const icon = document.createElement("i");
+          icon.classList.add("fa-solid", icons[i % icons.length], "random-shape");
+
+          let x = Math.random() * 100;
+          let y = Math.random() * 100;
+          if (i < fixedCount && x > 25 && x < 75 && y > 30 && y < 70) {
+            x = Math.random() * 20 + 5;
+            y = Math.random() * 20 + 5;
+          }
+
+          icon.dataset.baseX = x;
+          icon.dataset.baseY = y;
+          icon.style.left = x + "vw";
+          icon.style.top = y + "vh";
+          icon.style.fontSize = (Math.random() * 1.5 + 1) + "rem";
+
+          shapeContainer.appendChild(icon);
+          floatingIcons.push(icon);
+        }
+
+        function animateIcons() {
+          floatingIcons.forEach(icon => {
+            const offsetX = Math.sin(Date.now() / 1000 + parseFloat(icon.dataset.baseX)) * 10;
+            const offsetY = Math.cos(Date.now() / 800 + parseFloat(icon.dataset.baseY)) * 10;
+            icon.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+          });
+          requestAnimationFrame(animateIcons);
+        }
+        animateIcons();
+
+        document.addEventListener('mousemove', (e) => {
+          floatingIcons.forEach((icon) => {
+            const rect = icon.getBoundingClientRect();
+            const iconCenterX = rect.left + rect.width / 2;
+            const iconCenterY = rect.top + rect.height / 2;
+
+            const dx = e.clientX - iconCenterX;
+            const dy = e.clientY - iconCenterY;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 100) {
+              const angle = Math.atan2(dy, dx);
+              const offsetX = -Math.cos(angle) * (100 - distance) * 0.6;
+              const offsetY = -Math.sin(angle) * (100 - distance) * 0.6;
+              icon.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+            }
+          });
+        });
+
+        document.addEventListener('mouseleave', () => {
+          floatingIcons.forEach(icon => icon.style.transform = '');
+        });
+      }
+    </script> -->
